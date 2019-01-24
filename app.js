@@ -3,6 +3,7 @@ let score = 0
 
 function addPoint() {
   score++
+  //we practice single responsibility here by making sure addPoint only adds one point and then passes on responsibility to updateScore() that is in charge of only putting the score on the screen. Each one has a single job. This is taking the concept a bit far, but it is good practice to think about it. If a function becomes too large and does too many things we should break it up.
   updateScore()
 }
 
